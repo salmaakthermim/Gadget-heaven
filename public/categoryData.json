@@ -1,0 +1,189 @@
+[
+  {
+    "product_id": "P001",
+    "product_title": "Apple iPhone 15 Pro Max",
+    "product_image": "https://i.ibb.co.com/m9hvb4h/download-4.jpg",
+    "category": "Smartphones",
+    "price": 1299,
+    "description": "Experience the ultimate smartphone with the iPhone 15 Pro Max.",
+    "specification": [
+      "6.7-inch Super Retina XDR display",
+      "A17 Bionic chip",
+      "Triple-camera system (48MP Main, 12MP Telephoto, 12MP Ultrawide)",
+      "LiDAR Scanner",
+      "Up to 2TB storage"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "P002",
+    "product_title": "Samsung Galaxy S23 Ultra",
+    "product_image": "https://i.ibb.co.com/2Y5rdkg/download-2.jpg",
+    "category": "Smartphones",
+    "price": 249000,
+    "description": "Capture stunning photos and videos with Galaxy S23 Ultra.",
+    "specification": [
+      "6.8-inch Dynamic AMOLED display",
+      "Snapdragon 8 Gen 2",
+      "200MP quad-camera system",
+      "S Pen support",
+      "1TB storage option"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "P003",
+    "product_title": "Google Pixel 8 Pro",
+    "product_image": "https://i.ibb.co.com/d0b3hvc/download-6.jpg",
+    "category": "Smartphones",
+    "price": 999,
+    "description": "The smartest Google Pixel with powerful AI features.",
+    "specification": [
+      "6.7-inch OLED display",
+      "Google Tensor G3",
+      "50MP wide, 12MP ultrawide, 48MP telephoto cameras",
+      "Face Unlock and fingerprint sensor",
+      "Up to 512GB storage"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": "P004",
+    "product_title": "Sony WH-1000XM5",
+    "product_image": "https://i.ibb.co.com/n0nfzJt/download-7.jpg",
+    "category": "Headphones",
+    "price": 399,
+    "description": "Industry-leading noise cancellation with exceptional sound quality.",
+    "specification": [
+      "40mm drivers",
+      "Bluetooth 5.2",
+      "30 hours battery life",
+      "Touch sensor controls",
+      "Quick charging"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": "P005",
+    "product_title": "Apple MacBook Pro 16-inch",
+    "product_image": "https://i.ibb.co.com/9tGVGmj/download.jpg",
+    "category": "Laptop",
+    "price": 2499,
+    "description": "Powerful performance with M2 Max chip and stunning display.",
+    "specification": [
+      "16.2-inch Liquid Retina XDR display",
+      "Apple M2 Max chip",
+      "32GB RAM, 1TB SSD",
+      "Touch ID",
+      "Up to 22 hours battery life"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "P006",
+    "product_title": "Dell XPS 13 Plus",
+    "product_image": "https://i.ibb.co.com/173z9qH/download-1.jpg",
+    "category": "Laptops",
+    "price": 1399,
+    "description": "Sleek, compact, and powerful laptop with a stunning display.",
+    "specification": [
+      "13.4-inch InfinityEdge display",
+      "Intel Core i7 13th Gen",
+      "16GB RAM, 512GB SSD",
+      "Intel Iris Xe graphics",
+      "Windows 11 Home"
+    ],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": "P007",
+    "product_title": "Samsung Galaxy Watch 6",
+    "product_image": "https://i.ibb.co.com/173z9qH/download-1.jpg",
+    "category": "Smartwatches",
+    "price": 399,
+    "description": "Advanced health tracking and seamless integration with Galaxy devices.",
+    "specification": [
+      "1.5-inch Super AMOLED display",
+      "BioActive sensor",
+      "Bluetooth and LTE options",
+      "GPS and fitness tracking",
+      "Up to 2 days battery life"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": "P008",
+    "product_title": "Amazon Kindle Oasis",
+    "product_image": "https://i.ibb.co.com/173z9qH/download-1.jpg",
+    "category": "E-readers",
+    "price": 249,
+    "description": "Lightweight e-reader with adjustable warm light and waterproof design.",
+    "specification": [
+      "7-inch Paperwhite display",
+      "Adjustable warm light",
+      "Waterproof (IPX8)",
+      "8GB or 32GB storage",
+      "Weeks of battery life"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "P009",
+    "product_title": "Bose SoundLink Revolve+ II",
+    "product_image": "https://i.ibb.co.com/173z9qH/download-1.jpg",
+    "category": "Speakers",
+    "price": 299,
+    "description": "Portable Bluetooth speaker with 360-degree sound.",
+    "specification": [
+      "360-degree sound",
+      "Bluetooth 4.2",
+      "Battery life up to 17 hours",
+      "Water-resistant (IP55)",
+      "Voice assistant support"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": "P010",
+    "product_title": "Sony PlayStation 5",
+    "product_image": "https://i.ibb.co.com/173z9qH/download-1.jpg",
+    "category": "Gaming Consoles",
+    "price": 499,
+    "description": "Next-gen console with stunning graphics and ultra-fast load times.",
+    "specification": [
+      "AMD Ryzen CPU and Radeon GPU",
+      "825GB SSD",
+      "Supports 4K gaming",
+      "DualSense wireless controller",
+      "3D Audio technology"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": "P0011",
+    "product_title": "Apple Watch Series 8",
+    "product_image": "https://i.ibb.co.com/rfP9sj0/download-3.jpg",
+    "category": "Smart Watches",
+    "price": 9399,
+    "description": "Advanced health features and a brighter display.",
+    "specification": [
+      "Always-On Retina display",
+      "Blood Oxygen and ECG apps",
+      "Crash Detection",
+      "Water resistant up to 50m",
+      "Up to 18 hours battery life"
+    ],
+    "availability": true,
+    "rating": 4.8
+  }
+]
