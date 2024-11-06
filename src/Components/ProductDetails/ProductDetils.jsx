@@ -3,17 +3,16 @@ import { useLoaderData, useParams } from 'react-router-dom';
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { IoIosHeartEmpty } from "react-icons/io";
 
+
 const ProductDetils = () => {
     const { product_id } = useParams();
-
     const data = useLoaderData();
-    // const id = parseInt(product_id)
-    // console.log(typeof product_id, typeof id,  typeof +data[0].product_id)
     const gadget = data.find(gadget => gadget.product_id === product_id);
     console.log(data, gadget, product_id)
     const { product_id: currentId, product_image, product_title, description, price, specification, rating } = gadget;
 
-    // console.log(product_id)
+
+
     return (
         <div>
             <div className='text-center container mx-auto relative top-20 py-10 h-60 bg-[#9538E2] text-white rounded-3xl'>
@@ -55,7 +54,7 @@ const ProductDetils = () => {
                         <br />
                         <div className='flex gap-5 text-center'>
                         <button className='px-9 py-2 rounded-3xl mt-4 bg-[#9538E2] flex gap-4 items-center text-white'>Add To card <AiOutlineShoppingCart /></button>
-                        <p className='border p-3 text-2xl bg-white text-black rounded-full'><IoIosHeartEmpty /></p>
+                        <p  className='border p-3 text-2xl bg-white text-black rounded-full'><IoIosHeartEmpty /></p>
                         </div>
 
                        
