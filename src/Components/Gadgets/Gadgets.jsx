@@ -25,7 +25,7 @@ const Gadgets = () => {
                 <button className="btn rounded-full w-40 ">Accessories</button>
                 
             </div>
-          <div className="grid grid-cols-3 col-span-3">
+          <div className="lg:grid grid-cols-3 lg:col-span-3 md:col-span-2">
                 {
                     gadgets.map(gadget => <Gadget gadget={gadget} key={gadget.product_id}></Gadget>)
                 }
