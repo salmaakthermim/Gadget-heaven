@@ -6,7 +6,7 @@ import { IoIosHeartEmpty } from "react-icons/io";
 const NavBar = () => {
     return (
         <div>
-            <div className="navbar bg-[#9538E2] rounded-3xl text-white container mx-auto">
+            <div className="navbar  rounded-3xl bg-[#9538E2] text-white container mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

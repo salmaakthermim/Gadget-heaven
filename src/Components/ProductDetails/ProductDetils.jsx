@@ -2,14 +2,22 @@ import React from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { IoIosHeartEmpty } from "react-icons/io";
+import { addToStored } from '../Utility/addToDB';
 
 
 const ProductDetils = () => {
     const { product_id } = useParams();
     const data = useLoaderData();
     const gadget = data.find(gadget => gadget.product_id === product_id);
-    console.log(data, gadget, product_id)
+   
     const { product_id: currentId, product_image, product_title, description, price, specification, rating } = gadget;
+
+    const handleAddToCard = (product_id) =>{
+
+
+        addToStored(product_id);
+
+    }
 
 
 
@@ -53,7 +61,7 @@ const ProductDetils = () => {
                         </div>
                         <br />
                         <div className='flex gap-5 text-center'>
-                        <button className='px-9 py-2 rounded-3xl mt-4 bg-[#9538E2] flex gap-4 items-center text-white'>Add To card <AiOutlineShoppingCart /></button>
+                        <button onClick={() => handleAddToCard(product_id)}  className='px-9 py-2 rounded-3xl mt-4 bg-[#9538E2] flex gap-4 items-center text-white'>Add To card <AiOutlineShoppingCart /></button>
                         <p  className='border p-3 text-2xl bg-white text-black rounded-full'><IoIosHeartEmpty /></p>
                         </div>
 
