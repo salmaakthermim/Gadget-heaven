@@ -9,12 +9,21 @@ import ProductCart from '../ProductCart/ProductCart';
 
 const DashboardDetails = () => {
     const [details, setDetails] = useState([])
+    console.log("details check", details)
    
     const allDetails = useLoaderData();
 
+    console.log("all details", allDetails)
+
+    const filteredDetails = allDetails.filter((product) =>
+    details.includes(product.product_id)
+);
+
+console.log("filter details", filteredDetails)
+
     useEffect( () => {
         const storedAdd = getStoredAdd();
-        // const storedAddInt = storedAdd.map(product_id => parseInt(product_id)); 
+       
         console.log(storedAdd,  allDetails)
 
         
@@ -31,9 +40,9 @@ const DashboardDetails = () => {
                 <button  className='px-5 py-1 rounded-full border'>Wishlist</button>
             </div>
         </div>
-        <h1> cart: {details.length}</h1>
+        <h1 className='text-2xl font-bold py-10'> cart</h1>
         {
-            details.map(gadget => <ProductCart gadget={gadget} key={gadget.product_id}></ProductCart>)
+            filteredDetails.map(gadget => <ProductCart gadget={gadget} key={gadget.product_id}></ProductCart>)
         }
         </div>
         

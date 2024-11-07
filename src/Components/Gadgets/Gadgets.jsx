@@ -5,7 +5,9 @@ import Gadget from "../Gadget/Gadget";
 const Gadgets = () => {
 
     const [gadgets, setGadgets] = useState([]);
-    const [activeGedgets, setActiveGedets] = useState("All Productas");
+    const [activeGedgets, setActiveGedets] = useState("All products");
+
+    // console.log("this is product", activeGedgets)
 
     useEffect( () =>{
         fetch('categoryData.json')
@@ -17,9 +19,14 @@ const Gadgets = () => {
         setActiveGedets(product)
     };
 
-    const filterGedets = gadgets.filter((gadget) => activeGedgets === "All Product" || gadget.product === activeGedgets);
+   
+
+    const filteredGadgets = activeGedgets === "All products"
+    ? gadgets
+    : gadgets.filter((gadget) => gadget.category.toLowerCase() === activeGedgets.toLowerCase());
 
 
+    
     return (
         <div className="bg-slate-50">
 
@@ -29,7 +36,7 @@ const Gadgets = () => {
             <div className="col-span-1 h-[556px] text-center  w-[240px] border ml-20 ">
                 <button className={`btn rounded-full mb-5 mt-5 w-40 ${activeGedgets === "All Product" ? "bg-[#9538E2]" : ""}`} onClick={() => hendleProductClick("All products")} >All Product</button>
 
-                <button className={`btn rounded-full mb-5 mt-5 w-40 ${activeGedgets === "Laptops" ? "bg-[#9538E2]" : ""}`} onClick={() => hendleProductClick("Laptops")}>Laptops</button>
+                <button className={`btn rounded-full mb-5 mt-5 w-40 ${activeGedgets === "Laptops" ? "bg-[#9538E2]" : ""}`} onClick={() => hendleProductClick("Laptop")}>Laptops</button>
 
                 <button className={`btn rounded-full mb-5 mt-5 w-40 ${activeGedgets === "Iphone" ? "bg-[#9538E2]" : ""}`} onClick={() => hendleProductClick("Iphone")}>Iphone</button>
 
@@ -41,9 +48,13 @@ const Gadgets = () => {
                 
             </div>
           <div className="lg:grid grid-cols-3 lg:col-span-3 md:col-span-2">
-                {
-                    gadgets.map(gadget => <Gadget gadget={gadget} key={gadget.product_id}></Gadget>)
-                }
+               
+
+{filteredGadgets.length > 0 ? (
+                            filteredGadgets.map(gadget => <Gadget gadget={gadget} key={gadget.product_id} />)
+                        ) : (
+                            <p className="text-center text-4xl font-bold">No data found</p>
+                        )}
             </div>
           </div>
         </div>

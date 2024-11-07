@@ -2,22 +2,24 @@ import React from 'react';
 
 
 const ProductCart = ({ gadget }) => {
-  const { product_image, product_title, description } = gadget;
+  const { product_image, product_title, description, price } = gadget;
 
   return (
-    <div>
-      <div className="card bg-base-100 w-96 shadow-xl">
-        <figure>
+    <div className='flex border  items-center mb-5 text-center'>
+      <div>
+      <figure className="px-10 pt-10">
           <img
-            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-            alt="Shoes" />
+            src={product_image}
+            className="rounded-xl" />
         </figure>
-        <div className="card-body">
-          <h2 className="card-title">Shoes!</h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
-          <div className="card-actions justify-end">
-            <button className="btn btn-primary">Buy Now</button>
-          </div>
+      </div>
+      <div className="">
+       
+        <div className="card-body ">
+          <h2 className="card-title">{ product_title}</h2>
+          <p>{description}</p>
+          <p className='mr-96 font-bold'>price: ${price}</p>
+          
         </div>
       </div>
     </div>
